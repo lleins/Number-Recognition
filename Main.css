@@ -1,0 +1,214 @@
+body{
+    background-color: rgb(10, 10, 10);
+    padding: 0;
+    margin: 0;
+    
+}
+
+#Title{
+    position: flex;
+    margin-top: 50px;
+}
+
+#TopTitle{
+    color: rgb(245, 245, 245);
+    font-size: 35px;
+    font-family: monospace;
+    text-align: center;
+    
+}
+
+#BottomTitle{
+    color: rgb(220, 220, 220);
+    font-size: 18px;
+    font-family: monospace;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+#Digit_Recog_Container{
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns of equal width */
+    grid-gap: 10px;
+    width: 800px;
+    height: 300px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 40px;
+    
+}
+
+
+#Socials{
+    position: absolute;
+    left: 50%;
+    top: 625px;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: rgb(245, 245, 245);
+    
+}
+
+#Footer{
+    position: absolute;
+    top: 900px;
+    width: 20px;
+    height: 20px;
+}
+
+.Text{
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    font-family: monospace;
+    margin-top: 110px;
+    margin-left: 20px;
+}
+
+#Draw_Text{
+    position: absolute;
+    width: 100px
+}
+
+#Draw_Digit{
+    background-color: rgb(10, 10, 10);
+    width: 140px;
+    height: 140px;
+    margin-left: 120px;
+    border-radius: 20px;
+    margin-top: 80px;
+    
+}
+
+#Buttons_Container{
+    border-left: 2px solid rgb(10, 10, 10);
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Draw_Buttons{
+    background-color: rgb(245, 245, 245);
+    font-size: 20px;
+    font-family: monospace;
+    color: rgb(10, 10, 10);
+    border: 2px solid rgb(10, 10, 10);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: .1s;
+    transform: .1s;
+}
+
+.Draw_Buttons:hover{
+    color: rgb(245, 245, 245);
+    background-color: rgb(10, 10, 10);
+}
+
+.Draw_Buttons:active{
+    transform: scale(.95)
+}
+
+
+#Predict_Button{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+
+#Clear_Button{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 140px;
+    padding-left: 26px;
+    padding-right: 26px;
+    
+}
+
+#Guess_Container{
+    margin-left: 180px;
+    border-left: 2px solid rgb(10, 10, 10);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#Prediction_Text{
+    position: absolute;
+}
+
+
+#Prediction_Digit{
+    font-size: 100px;
+    font-family: monospace;
+    font-weight: bold;
+    width: 140px;
+    height: 140px;
+    background-color: rgb(245, 245, 245);
+    border: 2px dashed rgb(10, 10, 10);
+    margin-left: 145px;
+    margin-top: 55px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#Percentage_Guess{
+    position: absolute;
+    margin-top: -128px;
+    margin-left: 202px;
+    font-size: 20px;
+    font-family: monospace;
+    color: rgb(57, 255, 57);
+}
+
+
+
+#Name_Bottom{
+
+    color: rgb(10, 10, 10);
+    font-size: 18px;
+    font-family: monospace;
+    margin-left: 20px;
+    transform: .1s;
+}
+
+
+
+#Name_Link{
+    cursor: pointer;
+    transform: .1s;
+}
+
+#Name_Link:hover{
+    text-decoration: underline;
+}
+
+#GitHub_Img_Bottom{
+    position: absolute;
+    margin-left: 260px;
+    margin-top: -45px;
+    transform: scale(.9);
+}
+
+
+#Link_Img_Bottom{
+    position: absolute;
+    margin-left: 330px;
+    margin-top: -40px;
+    transform: scale(1);
+    filter: invert(100%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.Bottom_Imgs{
+    cursor: pointer;
+}
+
