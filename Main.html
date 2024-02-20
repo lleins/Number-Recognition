@@ -3,39 +3,52 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Main.css" type="text/css" rel="stylesheet">
     <script src="Main.js" defer></script>
     <title>Number Recognition</title>
 </head>
 
 <body>
-    
+
     <div id="Title">
-        <p id="TopTitle">Digit Recognizer</p>
+        <p id="TopTitle">0 - 9 Digit Recognizer</p>
         <p id="BottomTitle">Try Below!</p>
     </div>
-    
+
+
+    <div id="Disclaimer_Container">
+
+        <p id="Disclaimer_Text"><img id="Info_img" src="Images/info.png">&nbsp; &nbsp;For best results draw number as
+            legibly as possible.</p>
+    </div>
 
     <div id="Digit_Recog_Container">
-        <div id="Draw_Container">
+
+        <div id="">
             <p id="Draw_Text" class="Text">Draw a digit:</p>
             <canvas id="Draw_Digit"></canvas>
         </div>
 
+        <div id="Canvas_Loader" class="loader"></div>
 
+        <p id="Thinking_text">Thinking...</p>
 
         <div id="Buttons_Container">
-            <button id="Predict_Button" class="Draw_Buttons">Predict</button>
-            <button id="Clear_Button" class="Draw_Buttons">Clear</button>
+            <button id="Predict_Button" class="Draw_Buttons" onclick="fetch_prediction_data()">Predict</button>
+            <button id="Clear_Button" class="Draw_Buttons" onclick="Clear_Canvas(), Call_Loaders_2()">Clear</button>
         </div>
 
 
 
         <div id="Guess_Container">
             <p id="Prediction_Text" class="Text">Prediction:</p>
-            <p id="Prediction_Digit">5</p>
-            <p id="Percentage_Guess">86%</p>
+            <p id="Prediction_Digit">--</p>
+            <p id="Percentage_Guess">-%</p>
         </div>
+
+        <div id="Prediction_Loader" class="loader"></div>
+
     </div>
 
     <div id="Socials">
@@ -44,9 +57,9 @@
         <img src="Images/link.png" id="Link_Img_Bottom" class="Bottom_Imgs">
     </div>
 
-    <div id="Footer">
 
-    </div>
+
+
 </body>
 
 

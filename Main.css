@@ -1,24 +1,24 @@
-body{
+body {
     background-color: rgb(10, 10, 10);
     padding: 0;
     margin: 0;
-    
+
 }
 
-#Title{
+#Title {
     position: flex;
     margin-top: 50px;
 }
 
-#TopTitle{
+#TopTitle {
     color: rgb(245, 245, 245);
     font-size: 35px;
     font-family: monospace;
     text-align: center;
-    
+
 }
 
-#BottomTitle{
+#BottomTitle {
     color: rgb(220, 220, 220);
     font-size: 18px;
     font-family: monospace;
@@ -27,23 +27,46 @@ body{
 }
 
 
-#Digit_Recog_Container{
+#Disclaimer_Container {
+    position: relative;
+    top: 40px;
+}
+
+#Info_img {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    vertical-align: center;
+
+}
+
+#Disclaimer_Text {
+    color: rgb(245, 245, 245);
+    font-size: 12px;
+    font-family: monospace;
+    text-align: center;
+
+}
+
+
+#Digit_Recog_Container {
     position: absolute;
     left: 50%;
     top: 400px;
     transform: translate(-50%, -50%);
     display: flex;
-    grid-template-columns: repeat(3, 1fr); /* Create 3 columns of equal width */
+    grid-template-columns: repeat(3, 1fr);
+    /* Create 3 columns of equal width */
     grid-gap: 10px;
     width: 800px;
     height: 300px;
     background-color: rgb(245, 245, 245);
     border-radius: 40px;
-    
+
 }
 
 
-#Socials{
+#Socials {
     position: absolute;
     left: 50%;
     top: 625px;
@@ -52,17 +75,17 @@ body{
     height: 60px;
     border-radius: 40px;
     background-color: rgb(245, 245, 245);
-    
+
 }
 
-#Footer{
+#Footer {
     position: absolute;
     top: 900px;
     width: 20px;
     height: 20px;
 }
 
-.Text{
+.Text {
     color: rgb(10, 10, 10);
     font-size: 20px;
     font-family: monospace;
@@ -70,29 +93,31 @@ body{
     margin-left: 20px;
 }
 
-#Draw_Text{
+#Draw_Text {
     position: absolute;
     width: 100px
 }
 
-#Draw_Digit{
-    background-color: rgb(10, 10, 10);
+#Draw_Digit {
+    background-color: rgb(0, 0, 0);
     width: 140px;
     height: 140px;
     margin-left: 120px;
     border-radius: 20px;
     margin-top: 80px;
-    
+    cursor: url('Images/pen2.png'), auto;
+    border: 2px solid rgb(10, 10, 10);
 }
 
-#Buttons_Container{
+
+#Buttons_Container {
     border-left: 2px solid rgb(10, 10, 10);
     margin-left: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.Draw_Buttons{
+.Draw_Buttons {
     background-color: rgb(245, 245, 245);
     font-size: 20px;
     font-family: monospace;
@@ -104,35 +129,46 @@ body{
     padding-top: 10px;
     transition: .1s;
     transform: .1s;
+    cursor: pointer;
 }
 
-.Draw_Buttons:hover{
+.Draw_Buttons:hover {
     color: rgb(245, 245, 245);
     background-color: rgb(10, 10, 10);
 }
 
-.Draw_Buttons:active{
+.Draw_Buttons:active {
     transform: scale(.95)
 }
 
 
-#Predict_Button{
+#Thinking_text {
+    font-size: 20px;
+    font-family: monospace;
+    color: rgb(10, 10, 10);
+    position: absolute;
+    left: 345px;
+    top: 15px;
+    display: none;
+}
+
+#Predict_Button {
     position: absolute;
     margin-left: 40px;
     margin-top: 80px;
 }
 
 
-#Clear_Button{
+#Clear_Button {
     position: absolute;
     margin-left: 40px;
     margin-top: 140px;
     padding-left: 26px;
     padding-right: 26px;
-    
+
 }
 
-#Guess_Container{
+#Guess_Container {
     margin-left: 180px;
     border-left: 2px solid rgb(10, 10, 10);
     margin-top: 20px;
@@ -140,12 +176,12 @@ body{
 }
 
 
-#Prediction_Text{
+#Prediction_Text {
     position: absolute;
 }
 
 
-#Prediction_Digit{
+#Prediction_Digit {
     font-size: 100px;
     font-family: monospace;
     font-weight: bold;
@@ -159,7 +195,7 @@ body{
     border-radius: 20px;
 }
 
-#Percentage_Guess{
+#Percentage_Guess {
     position: absolute;
     margin-top: -128px;
     margin-left: 202px;
@@ -170,7 +206,7 @@ body{
 
 
 
-#Name_Bottom{
+#Name_Bottom {
 
     color: rgb(10, 10, 10);
     font-size: 18px;
@@ -181,16 +217,16 @@ body{
 
 
 
-#Name_Link{
+#Name_Link {
     cursor: pointer;
     transform: .1s;
 }
 
-#Name_Link:hover{
+#Name_Link:hover {
     text-decoration: underline;
 }
 
-#GitHub_Img_Bottom{
+#GitHub_Img_Bottom {
     position: absolute;
     margin-left: 260px;
     margin-top: -45px;
@@ -198,7 +234,7 @@ body{
 }
 
 
-#Link_Img_Bottom{
+#Link_Img_Bottom {
     position: absolute;
     margin-left: 330px;
     margin-top: -40px;
@@ -208,7 +244,61 @@ body{
     cursor: pointer;
 }
 
-.Bottom_Imgs{
+.Bottom_Imgs {
     cursor: pointer;
 }
 
+#URL {
+    position: relative;
+    left: 100px;
+    width: 700px;
+    color: white;
+}
+
+
+
+
+
+
+
+/*Loaders*/
+
+#Canvas_Loader {
+    position: absolute;
+    top: 129px;
+    left: 168px;
+    display: none;
+}
+
+#Prediction_Loader {
+    position: absolute;
+    top: 129px;
+    left: 692px;
+    display: none;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 33px;
+    padding: 5px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: rgb(245, 245, 245);
+    --_m:
+        conic-gradient(#0000 10%, #000),
+        linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+    -webkit-mask-composite: source-out;
+    mask-composite: subtract;
+    animation: l3 1s infinite linear;
+
+}
+
+@keyframes l3 {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+/*Loaders*/
